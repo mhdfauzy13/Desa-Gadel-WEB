@@ -2,12 +2,12 @@
 <script src="{{ asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/libs/feather-icons/dist/feather.min.js') }}"></script>
 <script src="{{ asset('assets/js/theme.min.js') }}"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="{{ asset('assets/libs/feather-icons/dist/feather.min.js') }}"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         if (typeof feather !== "undefined") {
-            feather.replace(); // Render ulang ikon Feather
+            feather.replace();
         }
     });
 </script>
@@ -47,10 +47,10 @@
             // Cek apakah password dalam mode terlihat
             if (passwordInput.type === "password") {
                 passwordInput.type = "text";
-                togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>'; // Ganti ikon
+                togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
             } else {
                 passwordInput.type = "password";
-                togglePassword.innerHTML = '<i class="fas fa-eye"></i>'; // Ganti ikon
+                togglePassword.innerHTML = '<i class="fas fa-eye"></i>'; 
             }
         });
     });

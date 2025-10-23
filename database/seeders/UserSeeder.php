@@ -10,10 +10,20 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
+        // Admin
         User::create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
-            'password' => bcrypt('password'),
+            'password' => Hash::make('password'),
+            'role' => 'admin',
+        ]);
+
+        // Operator
+        User::create([
+            'name' => 'Operator',
+            'email' => 'operator@gmail.com',
+            'password' => Hash::make('password'),
+            'role' => 'operator',
         ]);
     }
 }
