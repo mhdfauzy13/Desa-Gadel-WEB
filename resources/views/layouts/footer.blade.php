@@ -1,3 +1,5 @@
-<footer class="text-center py-3">
-    <p>&copy; {{ date('Y') }} Desa-Gadel. All Rights Reserved.</p>
+<footer class="footer text-center py-3 shadow-sm">
+    <small class="text-muted">
+        © {{ date('Y') }} Desa-Gadel. All Rights Reserved.
+    </small>
 </footer>

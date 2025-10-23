@@ -1,11 +1,39 @@
 <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon/favicon.ico') }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon/indramayu.png') }}">
 
+<link href="{{ asset('assets/libs/bootstrap-icons/font/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/libs/dropzone/dist/dropzone.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/libs/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/libs/prismjs/themes/prism-okaidia.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('assets/libs/bootstrap-icons/font/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/libs/dropzone/dist/dropzone.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/libs/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/libs/prismjs/themes/prism-okaidia.css') }}" rel="stylesheet">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
+<style>
+    /* Layout agar footer selalu di bawah */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
+    #db-wrapper {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    #page-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    /* Konten agar mendorong footer ke bawah */
+    .container-fluid {
+        flex: 1;
+    }
+
+    /* Footer tetap di bawah */
+    .footer {
+        margin-top: auto;
+    }
+</style>
