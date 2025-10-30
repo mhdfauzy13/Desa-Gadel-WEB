@@ -1,4 +1,4 @@
-<footer class="text-white pt-5 pb-3" style="background-color: #244b86;">
+<footer class="text-white pt-5 pb-3" style="background-color: #00cdff;">
     <div class="container">
         <div class="row gy-4">
             <!-- Kolom 1: Profil Desa -->

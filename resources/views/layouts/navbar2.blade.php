@@ -33,7 +33,7 @@
 
     /* Saat discroll, ubah warna */
     .navbar-scrolled {
-        background-color: #ffffff !important;
+        background-color: #00cdff!important;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
